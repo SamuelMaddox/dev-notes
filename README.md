@@ -5,15 +5,15 @@
   - [Vs Code Extensions](#vs-code-extensions)
   - [Vs Code Settings](#vs-code-settings)
 - [Windows Terminal](#windows-terminal)
-  - [Add Git Bash to Windows Terminal](#add-git-bash-to-windows-terminal)
-  - [Install Ubuntu Server or Debian Using WSL](#install-ubuntu-server-or-debian-using-wsl)
+  - [Option 1: Add Git Bash to Windows Terminal](#option-1-add-git-bash-to-windows-terminal)
+  - [Option 2: Install Ubuntu Server or Debian Using WSL](#option-2-install-ubuntu-server-or-debian-using-wsl)
   - [Add Brogrammer Color Theme](#add-brogrammer-color-theme)
 - [Mac Terminal](#mac-terminal)
   - [Add Brogrammer Color Theme](#add-brogrammer-color-theme-1)
 - [Install Oh My Zsh](#install-oh-my-zsh)
   - [Install for Git Bash](#install-for-git-bash)
   - [Install for Linux/Mac](#install-for-linuxmac)
-- [Fix Zsh Autocomplete](#fix-zsh-autocomplete)
+- [Modify Zsh Tab Completion](#modify-zsh-tab-completion)
 - [Install Powerlevel10k Plugin](#install-powerlevel10k-plugin)
 
 ## Mac Fix Home & End Keys
@@ -134,20 +134,22 @@
 
 ## Windows Terminal
 
-### Add Git Bash to Windows Terminal
+### Option 1: Add Git Bash to Windows Terminal
 
 1. Open Windows Terminal. From the drop down menu (look for the `˅` symbol nex to the tabs) select `Settings`
 2. In the left menu under Profiles select `Add new`
-3. In the `name` field enter `Git Bash`
-4. In the `Command line` field enter `C:\Program Files\Git\bin\bash.exe`
-5. In the `Icon` field enter `C:\Program Files\Git\mingw64\share\git\git-for-windows.ico`
-6. Click `Save`
-7. In the left menu at the top select `Startup`
-8. Update the `Default profile` field to `Git Bash`
-9. In the left menu at the bottom select `Open JSON File`
-10. Find the `Profile.list` array and change the ordering to your preference
+3. Click on `+ New Empty Profile`
+4. In the `name` field enter `Git Bash`
+5. In the `Command line` field enter `C:\Program Files\Git\bin\bash.exe`
+6. Under `Starting directory` unselect the `Use parent process directory` checkbox. `%USERPROFILE%` should populate the field instead
+7. In the `Icon` field enter `C:\Program Files\Git\mingw64\share\git\git-for-windows.ico`
+8. Click `Save`
+9. In the left menu at the top select `Startup`
+10. Update the `Default profile` field to `Git Bash`
+11. In the left menu at the bottom select `Open JSON File`
+12. Find the `Profile.list` array and change the ordering to your preference
 
-### Install Ubuntu Server or Debian Using WSL
+### Option 2: Install Ubuntu Server or Debian Using WSL
 
 1. Follow instructions found here: <https://learn.microsoft.com/en-us/windows/wsl/install>
 2. Once installed the following installation commands may need to be executed:
@@ -251,9 +253,9 @@
 
 Follow this guide: <https://github.com/ohmyzsh/ohmyzsh/wiki/Installing-ZSH#how-to-install-zsh-on-many-platforms>
 
-## Fix Zsh Autocomplete
+## Modify Zsh Tab Completion
 
-By default, Zsh "Tab Completion" may be case sensitive. Open your `~/.zshrc` file in an editor and add the following lines:
+By default, Zsh "Tab Completion" may be case sensitive. Open your `~/.zshrc` file in an editor and append the following lines:
 
 ```bash
 autoload -Uz compinit && compinit

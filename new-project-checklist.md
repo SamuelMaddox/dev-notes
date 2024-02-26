@@ -1,0 +1,39 @@
+# New Project Checklist
+
+- [ ] Install initial code (see the guides within this repo)
+- [ ] Replace default README with the example one found in the `./examples` directory
+  - [ ] Change the header of that readme to the application name.
+- [ ] Install Prettier
+- [ ] Install Storybook
+- [ ] Modify ESLint Config
+- [ ] Add UI Component Library
+  - [ ] Configure Component Library Theme
+- [ ] Modify `package.json` `scripts`
+  - [ ] `start`
+  - [ ] `build`
+  - [ ] `test`
+  - [ ] `test:coverage`
+  - [ ] `test:nowatch`
+  - [ ] `test:check` (No watch and coverage flags enabled)
+  - [ ] `lint`
+  - [ ] `lint:fix`
+  - [ ] `lint:check`
+  - [ ] `prettier`
+  - [ ] `prettier:check`
+  - [ ] `storybook`
+  - [ ] `storybook:build`
+  - [ ] `prepare` (TODO: does this work with yarn?)
+- [ ] Setup CI/CD Pipeline
+  - [ ] Add Husky and Lint stage pre commit hooks
+  - [ ] Setup branch policies and PR status checks
+    - [ ] lint
+    - [ ] prettier
+    - [ ] tests
+    - [ ] build
+  - [ ] Build and deploy to DEV
+  - [ ] Pending approval deploy to QE
+  - [ ] Pending approval deploy to UAT
+    - [ ] TODO: Maybe require versioning assignment step somehow?
+  - [ ] Pending approval deploy to PROD
+- [ ] ...
+- [ ] Delete this section

@@ -1,13 +1,19 @@
 # New Project Checklist
 
 - [ ] Install initial code (see the guides within this repo)
+  - [ ] TODO: Create workspace recommended vs code extensions
 - [ ] Replace default README with the example one found in the `./examples` directory
   - [ ] Change the header of that readme to the application name.
+- [ ] Install and/or modify ESLint Config
+  - [ ] TODO: Consider adding stylelint
 - [ ] Install Prettier
 - [ ] Install Storybook
-- [ ] Modify ESLint Config
+- [ ] Add Tailwind CSS
+  - [ ] Add Tailwind Prettier Plugin
+  - [ ] TODO: something about tailwind intellisense for vscode
 - [ ] Add UI Component Library
   - [ ] Configure Component Library Theme
+  - [ ] look into primereact/primeng/primevue https://primetek.com.tr/#products
 - [ ] Modify `package.json` `scripts`
   - [ ] `start`
   - [ ] `build`
@@ -22,7 +28,7 @@
   - [ ] `prettier:check`
   - [ ] `storybook`
   - [ ] `storybook:build`
-  - [ ] `prepare` (TODO: does this work with yarn?)
+  - [ ] `prepare` (setup pre-commit hooks. TODO: does this work with yarn?)
 - [ ] Setup CI/CD Pipeline
   - [ ] Add Husky and Lint stage pre commit hooks
   - [ ] Setup branch policies and PR status checks

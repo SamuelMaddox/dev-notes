@@ -22,3 +22,7 @@
    ```
 
 TODO: something about semantic versioning
+
+TODO: [Avoid Nesting when you're Testing](https://kentcdodds.com/blog/avoid-nesting-when-youre-testing)
+TODO: maybe save a pdf version of the above so we always have it
+TODO: PDF or Screen of testing library guiding principles

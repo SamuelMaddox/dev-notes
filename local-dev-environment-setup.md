@@ -50,12 +50,18 @@
 
 ### Vs Code Extensions
 
+- Angular Language Service
+- Auto Close Tag
+- Auto Rename Tag
+- Azure Pipelines
+- Better Comments
 - Code Spell Checker
-- C#
 - ESLint
 - Git Graph
-- GitHub Pull Requests and Issues
+- Git History
 - GitLens
+- GitHub Copilot
+- GitHub Copilot Chat
 - Jest
 - Live Server (Microsoft)
 - Live Share Extension Pack (Microsoft)
@@ -67,6 +73,7 @@
 - Sonarlint
 - Stylelint
 - TODO Highlight
+- Vue - Official
 - WSL (Microsoft)
 - YAML
 
@@ -75,7 +82,6 @@
 ```json
 {
   "workbench.startupEditor": "newUntitledFile",
-  "css.lint.unknownAtRules": "ignore",
   "editor.accessibilitySupport": "off",
   "editor.fontSize": 13,
   "editor.formatOnSave": true,

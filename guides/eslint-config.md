@@ -1,6 +1,6 @@
 # ESLint Config
 
-⚠️ This may be changing soon. See [ESLint New Flat Configuration Files](https://eslint.org/docs/latest/use/configure/configuration-files-new). With the new flat configuration file, the rule packages may have different import names. For example: [typescript-eslint](https://typescript-eslint.io/getting-started/typed-linting). This section may need updated once the new flat configuration files are more widely adopted
+> ⚠️ This may be changing soon. See [ESLint New Flat Configuration Files](https://eslint.org/docs/latest/use/configure/configuration-files-new). With the new flat configuration file, some config packages may have different import names. For example: [typescript-eslint](https://typescript-eslint.io/getting-started/typed-linting). This section may need updated once the new flat configuration files are more widely adopted
 
 Projects scaffolding libraries usually include their own linting rules and configuration packages. Here are some examples of such packages:
 
@@ -12,6 +12,7 @@ Projects scaffolding libraries usually include their own linting rules and confi
 Additionally we want to make sure that the following configurations are added to the project; if they're not already included as part of the above configurations:
 
 - `eslint:recommended`
+- `plugin:@typescript-eslint/recommended`
 - `plugin:storybook/recommended`
 - `prettier`
 
